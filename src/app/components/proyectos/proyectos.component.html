@@ -1,0 +1,25 @@
+<div class="ui centered link cards">
+  <div *ngFor="let p of proyectos" class="ui card">
+    <div class="content">
+      <div class="right floated meta">{{p.hero.profesion}}</div>
+      <div class="left floated">
+        <img class="ui avatar image" src="{{p.hero.foto}}"> {{p.hero.nombre}}
+      </div>
+    </div>
+    
+    <a routerLink="/proyectos/{{p.id}}">
+      <img class="ui image fluid top aligned" src="{{p.imagen}}">
+    </a>
+    <div class="content">
+      <span class="left floated">
+        <i class="film icon"></i>
+        {{p.nombre}}
+      </span>
+    </div>
+    <div class="extra content">
+      <div class="ui large left input">
+        <p>{{p.descripcion | slice : 0 : 110}}...</p>
+      </div>
+    </div>
+  </div>
+</div>

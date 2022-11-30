@@ -1,0 +1,24 @@
+<div *ngIf="proyecto" class="ui raised very padded text container segment">
+  <h2 class="ui header">{{proyecto.nombre}}</h2>
+  <div class="ui centered large image">
+    <img src="{{ proyecto.imagen }}" />
+  </div>
+
+  <h3 class="ui header left aligned">Descripción</h3>
+  <p class="text-justify">{{proyecto.descripcion}}</p>
+
+  <div class="ui divider"></div>
+
+  <h3 class="ui header left aligned">Hero</h3>
+  <p class="text-justify"><b>Nombre:</b>  {{proyecto.hero.nombre}}</p>
+  <p class="text-justify"><b>Profesión:</b>  {{proyecto.hero.profesion}}</p>
+  <p class="text-justify"><b>Foto:</b></p>
+  <div class="ui small large image">
+    <img src="{{ proyecto.hero.foto }}" />
+  </div>
+ 
+  <a routerLink="" class="back-icon">
+    <i class="arrow left icon"></i>
+    Regresar
+  </a>
+</div>

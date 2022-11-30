@@ -1,0 +1,26 @@
+.pt-1 {
+  padding-top: 1rem !important;
+}
+
+.bg-header, .footer {
+  background-color: darkslategrey;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
